@@ -1,18 +1,18 @@
 'use client';
-import { Button } from 'primereact/button';
 import React from 'react';
+import DesktopSidebar from '../components/partial/DesktopSidebar';
 
 const page = () => {
 
   return (
     <div className='grid grid-cols-9'>
-       <section className='col-span-2 bg-slate-100'>
-sas
-       </section>
+      <section className='col-span-2 bg-primary-50'>
+        <DesktopSidebar />
+      </section>
 
-       <section className='col-span-7 bg-slate-200'>
-asads
-       </section>
+      <section className='col-span-7'>
+        asads
+      </section>
     </div>
   );
 };

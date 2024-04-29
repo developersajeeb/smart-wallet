@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,32 +17,18 @@ const config: Config = {
       },
       colors: {
         primary: {
-          100: 'var(--swPrimary-100)',
-          300: 'var(--swPrimary-300)',
-          400: 'var(--swPrimary-400)',
-          500: 'var(--swPrimary-500)',
-          600: 'var(--swPrimary-600)',
-          700: 'var(--swPrimary-700)',
+          50: '#e2e5e1',
+          100: '#cad2c5',
+          300: '#52796f',
+          400: '#526c5b',
+          500: '#354f52',
+          600: '#244c3c',
+          700: '#2f3e46',
         },
         orange: {
-          500: 'var(--swOrange-500)',
+          500: '#fa6e06',
         },
       },
-      variables: {
-        DEFAULT: {
-          swPrimary: {
-            100: '#cad2c5',
-            300: '#52796f',
-            400: '#526c5b',
-            500: '#354f52',
-            600: '#244c3c',
-            700: '#2f3e46',
-          },
-          swOrange: {
-            500: '#fa6e06',
-          },
-        }
-      }
     },
   },
   plugins: [],

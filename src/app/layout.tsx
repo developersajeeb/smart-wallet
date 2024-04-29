@@ -3,6 +3,7 @@ import "./globals.css";
 import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/soho-light/theme.css';
 import 'primeicons/primeicons.css';
+import Providers from "./Providers";
 
 export const metadata: Metadata = {
   title: "Smart Wallet",
@@ -17,9 +18,11 @@ export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>
-        <main>
+        <Providers>
+          <main>
             {children}
-        </main>
+          </main>
+        </Providers>
       </body>
     </html>
   );
