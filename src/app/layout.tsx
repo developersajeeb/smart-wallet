@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import 'primereact/resources/primereact.min.css';
+import 'primereact/resources/themes/soho-light/theme.css';
 import 'primeicons/primeicons.css';
-import { PrimeReactProvider } from 'primereact/api';
-import "primereact/resources/primereact.min.css";
-import 'primereact/resources/themes/lara-light-indigo/theme.css';
 
 export const metadata: Metadata = {
   title: "Smart Wallet",
@@ -17,11 +16,9 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body>
+      <body suppressHydrationWarning={true}>
         <main>
-          <PrimeReactProvider>
             {children}
-          </PrimeReactProvider>
         </main>
       </body>
     </html>
