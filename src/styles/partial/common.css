@@ -1,0 +1,19 @@
+.primary-shadow {
+    box-shadow: 0px 3.5px 5.5px 0px #bababa38;
+}
+
+
+/* Primary Scrollbar */
+.primary-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.primary-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.primary-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #A6A6A6;
+    border-radius: 10px;
+}

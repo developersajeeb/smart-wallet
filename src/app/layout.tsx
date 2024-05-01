@@ -4,6 +4,7 @@ import 'primereact/resources/primereact.min.css';
 import 'primereact/resources/themes/soho-light/theme.css';
 import 'primeicons/primeicons.css';
 import Providers from "./Providers";
+import '../styles/app.css'
 
 export const metadata: Metadata = {
   title: "Smart Wallet",
@@ -17,7 +18,7 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true}>
+      <body suppressHydrationWarning={true} className="bg-gray-50">
         <Providers>
           <main>
             {children}

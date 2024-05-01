@@ -1,19 +1,14 @@
 'use client';
 import React from 'react';
 import DesktopSidebar from '../components/partial/DesktopSidebar';
+import Dashboard from './dashboard';
 
 const page = () => {
 
   return (
-    <div className='grid grid-cols-9'>
-      <section className='col-span-2 bg-primary-50'>
-        <DesktopSidebar />
-      </section>
-
-      <section className='col-span-7'>
-        asads
-      </section>
-    </div>
+    <>
+      <Dashboard />
+    </>
   );
 };
 
