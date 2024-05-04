@@ -1,0 +1,26 @@
+.sw-knob svg .p-knob-range {
+    stroke: #ffffff !important;
+}
+
+.sw-knob svg .p-knob-value {
+    stroke: #06371A !important;
+}
+
+.sw-knob svg .p-knob-text {
+    fill: #06371A !important;
+    font-weight: 600 !important;
+}
+
+/* Prime React Input style */
+.p-inputtext {
+    padding: 7px 12px !important;
+}
+
+.p-inputtext:enabled:hover {
+    border-color: #108F43 !important;
+}
+
+.p-inputtext:enabled:focus {
+    box-shadow: none !important;
+    border-color: #108F43 !important;
+}

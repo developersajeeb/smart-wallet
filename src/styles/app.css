@@ -1,4 +1,6 @@
 /* Partial */
-@import './partial/common.css'
+@import './partial/common.css';
+@import './partial/plugin-overwright.css';
 
 /* Pages */
+@import './pages/dashboard.css';
