@@ -1,3 +1,7 @@
+.p-component {
+    font-family: "Roboto", sans-serif !important;
+}
+
 .sw-knob svg .p-knob-range {
     stroke: #ffffff !important;
 }
@@ -13,7 +17,7 @@
 
 /* Prime React Input style */
 .p-inputtext {
-    padding: 7px 12px !important;
+    padding: 7px 18px !important;
 }
 
 .p-inputtext:enabled:hover {
@@ -23,4 +27,25 @@
 .p-inputtext:enabled:focus {
     box-shadow: none !important;
     border-color: #108F43 !important;
+}
+
+/* Prime React Sidebar */
+.p-sidebar-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.p-sidebar-content::-webkit-scrollbar-track {
+    @apply dark:!bg-dark-500;
+    background: #f1f1f1 !important;
+    border-radius: 10px !important;
+}
+
+.p-sidebar-content::-webkit-scrollbar-thumb {
+    @apply dark:!bg-dark-100;
+    background-color: #A6A6A6 !important;
+    border-radius: 10px !important;
+}
+
+.p-sidebar-header {
+    display: none !important;
 }

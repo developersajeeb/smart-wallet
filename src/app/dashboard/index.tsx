@@ -1,7 +1,8 @@
 'use client';
 import DesktopSidebar from '@/components/partial/DesktopSidebar';
 import TopHeader from '@/components/partial/TopHeader';
-import React from 'react';
+import React, { useState } from 'react';
+import UpcomingBills from './upcomming-bills/UpcomingBills';
 
 const Dashboard = () => {
 
@@ -11,8 +12,11 @@ const Dashboard = () => {
         <DesktopSidebar />
       </aside>
 
-      <section className='pl-[350px]'>
+      <section className='lg:pl-[300px] 2xl:pl-[350px]'>
         <TopHeader />
+        <div className='grid grid-cols-3'>
+          <UpcomingBills />
+        </div>
       </section>
     </div>
   );

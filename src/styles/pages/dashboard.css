@@ -1,4 +1,11 @@
+/* Top Header Style */
 .header-search-input {
     width: 100% !important;
     border-radius: 30px !important;
+    padding-right: 44px !important;
+}
+
+/* Mobile sidebar */
+.mobile-sidebar .p-sidebar-content {
+    overflow-y: hidden !important;
 }
