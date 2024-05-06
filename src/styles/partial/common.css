@@ -21,3 +21,33 @@
     background-color: #A6A6A6;
     border-radius: 10px;
 }
+
+/* Prime React dialog box */
+.sw-dialog-box {
+    max-width: 600px !important;
+    width: 600px !important;
+    border-radius: 16px !important;
+}
+
+.sw-dialog-box .p-dialog-header {
+    @apply dark:!bg-dark-100 !text-gray-800 dark:!text-white;
+    border-top-right-radius: 16px !important;
+    border-top-left-radius: 16px !important;
+}
+
+.sw-dialog-box .p-dialog-content:last-of-type {
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+}
+
+.sw-dialog-box .p-dialog-header .p-dialog-header-icon {
+    @apply dark:!text-white;
+}
+
+.sw-dialog-box .p-dialog-header .p-dialog-header-icon:enabled:hover {
+    @apply dark:!bg-black;
+}
+
+.sw-dialog-box .p-dialog-content {
+    @apply dark:!bg-dark-100;
+}

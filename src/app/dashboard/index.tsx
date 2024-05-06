@@ -14,7 +14,7 @@ const Dashboard = () => {
 
       <section className='lg:pl-[300px] 2xl:pl-[350px]'>
         <TopHeader />
-        <div className='grid grid-cols-3'>
+        <div className='grid grid-cols-3 px-7'>
           <UpcomingBills />
         </div>
       </section>
