@@ -51,3 +51,8 @@
 .sw-dialog-box .p-dialog-content {
     @apply dark:!bg-dark-100;
 }
+
+/* Prime React Input */
+.sw-input input {
+    @apply bg-white dark:!bg-dark-50 dark:border-gray-600 dark:text-gray-300 !rounded-[10px];
+}

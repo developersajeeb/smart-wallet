@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { GoGoal } from 'react-icons/go';
 import { FiEdit3 } from "react-icons/fi";
 import { Dialog } from 'primereact/dialog';
-import { InputNumber, InputNumberValueChangeEvent } from 'primereact/inputnumber';
+import { InputNumber } from 'primereact/inputnumber';
+import { GoTrophy } from "react-icons/go";
+import { LuCalendarPlus } from "react-icons/lu";
 
 const UpcomingBills = () => {
     const [visible, setVisible] = useState<boolean>(false);
@@ -25,15 +27,35 @@ const UpcomingBills = () => {
                     <h4 className='text-lg font-medium text-gray-800 dark:text-white'>May, 2024</h4>
                 </div>
                 <p className='text-xs mt-[2px] font-light text-gray-400'>Total goals amount</p>
+
+                <div className='grid grid-cols-2 mt-6'>
+                    <div>
+                        <div className='flex items-start gap-2'>
+                            <span className='text-gray-600 dark:text-gray-400'><GoTrophy size={18} /></span>
+                            <div className='-my-[2px]'>
+                                <p className='text-sm text-gray-400'>Target Achieved</p>
+                                <h4 className='mt-1 text-xl font-semibold text-gray-800 dark:text-white'>$12,500</h4>
+                            </div>
+                        </div>
+
+                        <div className='flex items-start gap-2 mt-5'>
+                            <span className='text-gray-600 dark:text-gray-400'><LuCalendarPlus size={18} /></span>
+                            <div className='-my-[2px]'>
+                                <p className='text-sm text-gray-400'>This month Target</p>
+                                <h4 className='mt-1 text-xl font-semibold text-gray-800 dark:text-white'>$12,500</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <Dialog header="Header" className='sw-dialog-box' visible={visible} onHide={() => setVisible(false)}>
+            <Dialog header="Edit Goals Amounts" className='sw-dialog-box' visible={visible} onHide={() => setVisible(false)}>
                 <div>
                     <label className='block font-medium text-gray-600 dark:text-white mb-2 text-base' htmlFor='target'>Target Amounts</label>
-                    <InputNumber className='w-full dark:!bg-dark-50 dark:border-gray-700 dark:text-gray-300' inputId="target" value={targetValue} onValueChange={(e) => setTargetValue(e.value ?? 0)} />
+                    <InputNumber className='sw-input w-full' inputId="target" value={targetValue} onValueChange={(e) => setTargetValue(e.value ?? 0)} />
                 </div>
                 <div className='mt-5'>
                     <label className='block font-medium text-gray-600 dark:text-white mb-2 text-base' htmlFor='target'>Present Amounts</label>
-                    <InputNumber className='w-full dark:!bg-dark-50 dark:border-gray-700 dark:text-gray-300' inputId="target" value={nowValue} onValueChange={(e) => setNowValue(e.value ?? 0)} />
+                    <InputNumber className='sw-input w-full' inputId="target" value={nowValue} onValueChange={(e) => setNowValue(e.value ?? 0)} />
                 </div>
             </Dialog>
         </>
