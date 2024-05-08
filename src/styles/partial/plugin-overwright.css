@@ -49,3 +49,12 @@
 .p-sidebar-header {
     display: none !important;
 }
+
+/* MUI emotion style over wright */
+.target-pie-custom-class .css-b9rdri-MuiGauge-referenceArc {
+    fill: #108f43 !important;
+}
+
+.target-pie-custom-class .css-p1sr87-MuiGauge-referenceArc {
+    @apply !fill-gray-300 dark:!fill-gray-300;
+}

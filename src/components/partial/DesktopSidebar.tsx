@@ -16,7 +16,7 @@ const DesktopSidebar = () => {
   const [value, setValue] = useState<number>(10);
 
   return (
-    <div className='px-7 py-8 bg-slate-100 dark:bg-dark-500 fixed left-0 top-0 bottom-0 w-[300px] 2xl:w-[350px] hidden lg:block'>
+    <div className='px-7 py-8 bg-slate-100 dark:bg-dark-500 fixed left-0 top-0 bottom-0 w-[300px] 2xl:w-[350px] hidden xl:block'>
       <div>
         <Image className='w-[180px] mx-auto' src={MainLogo} width={300} height={100} alt='Smart Wallet' />
         <div className='pt-8 border-b border-slate-200 dark:border-dark-100'></div>

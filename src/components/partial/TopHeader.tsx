@@ -18,9 +18,9 @@ const TopHeader = () => {
 
     return (
         <>
-            <header className='md:pr-6 lg:pr-8 md:pl-6 px-4 py-5 flex justify-between items-center'>
+            <header className='md:pr-6 xl:pr-8 md:pl-6 px-4 py-5 flex justify-between items-center'>
                 <section className='flex gap-3 items-center'>
-                    <div className='lg:hidden'>
+                    <div className='xl:hidden'>
                         <CgMenuLeft className='cursor-pointer' onClick={() => setVisibleLeft(true)} size={25} />
                     </div>
                     <h1 className='text-xl sm:text-2xl font-semibold text-gray-700 dark:text-white'>Dashboard</h1>
@@ -34,10 +34,10 @@ const TopHeader = () => {
 
                     <div>
                         <ul className='flex items-center gap-2 sm:gap-4'>
-                            <li className='hidden xl:block'>
+                            <li className='hidden lg:block'>
                                 <button className='bg-primary-200 hover:bg-primary-400 duration-300 px-4 py-[10px] rounded-xl font-medium text-white text-sm'>+ Add Expense</button>
                             </li>
-                            <li className='hidden xl:block'>
+                            <li className='hidden lg:block'>
                                 <button className='bg-primary-200 hover:bg-primary-400 duration-300 h-10 w-10 flex justify-center items-center rounded-full text-white'><RiNotification4Line size={20} /></button>
                             </li>
                             <li>
@@ -49,7 +49,7 @@ const TopHeader = () => {
                                     className='w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover object-center border p-[2px] border-secondary-200 cursor-pointer' src={userPhoto} width={100} height={100} alt='User Photo' />
                                 <OverlayPanel ref={profileToggle} >
                                     <ul>
-                                        <li className='block xl:hidden mb-4'>
+                                        <li className='block lg:hidden mb-4'>
                                             <span title='Notification' className='cursor-pointer'><RiNotification4Line size={20} /></span>
                                         </li>
                                         <li>
