@@ -6,6 +6,10 @@
     scrollbar-width: none;
 }
 
+/* Common Word break class */
+.word-break {
+    word-break: break-word;
+}
 
 /* Primary Scrollbar */
 .primary-scrollbar::-webkit-scrollbar {
