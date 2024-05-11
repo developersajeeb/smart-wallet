@@ -28,20 +28,20 @@ const TopHeader = () => {
 
                 <section className='flex items-center gap-6'>
                     <div className='relative max-w-[330px] w-[330px] hidden md:block'>
-                        <InputText className='header-search-input dark:!bg-dark-50 dark:border-dark-50 dark:text-gray-300' value={value} placeholder='Search...' onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} />
+                        <InputText className='header-search-input dark:!bg-dark-400 dark:border-dark-50 dark:text-gray-300' value={value} placeholder='Search...' onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} />
                         <span className='absolute cursor-pointer hover:bg-primary-300 p-[9px] rounded-full right-[1px] top-[0.7px] text-gray-500 dark:text-gray-300 hover:text-white duration-300'><FiSearch size={20} /></span>
                     </div>
 
                     <div>
                         <ul className='flex items-center gap-2 sm:gap-4'>
                             <li className='hidden lg:block'>
-                                <button className='bg-primary-200 hover:bg-primary-400 duration-300 px-4 py-[10px] rounded-xl font-medium text-white text-sm'>+ Add Expense</button>
+                                <button className='bg-primary-300 hover:bg-primary-400 duration-300 px-4 py-[10px] rounded-xl font-medium text-white text-sm'>+ Add Expense</button>
                             </li>
                             <li className='hidden lg:block'>
-                                <button className='bg-primary-200 hover:bg-primary-400 duration-300 h-10 w-10 flex justify-center items-center rounded-full text-white'><RiNotification4Line size={20} /></button>
+                                <button className='bg-primary-300 hover:bg-primary-400 duration-300 h-10 w-10 flex justify-center items-center rounded-full text-white'><RiNotification4Line size={20} /></button>
                             </li>
                             <li>
-                                <button className='bg-primary-200 hover:bg-primary-400 duration-300 w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center rounded-full text-white'><ThemeSwitch /></button>
+                                <button className='bg-primary-300 hover:bg-primary-400 duration-300 w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center rounded-full text-white'><ThemeSwitch /></button>
                             </li>
                             <li>
                                 <Image

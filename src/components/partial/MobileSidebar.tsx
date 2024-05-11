@@ -22,7 +22,7 @@ const MobileSidebar = ({ visibleLeft, setVisibleLeft }: Props) => {
 
 
     return (
-        <Sidebar className='!bg-slate-100 dark:!bg-dark-500 mobile-sidebar' visible={visibleLeft} position="left" onHide={() => setVisibleLeft(false)}>
+        <Sidebar className='!bg-slate-100 dark:!bg-dark-400 mobile-sidebar' visible={visibleLeft} position="left" onHide={() => setVisibleLeft(false)}>
             <div className="flex items-center gap-2 justify-between py-4 border-b border-slate-200 dark:border-dark-100">
                 <Image className='max-w-[160px]' src={MainLogo} width={300} height={100} alt='Smart Wallet' />
                 <span className='border border-gray-400 p-1 dark:text-gray-400 rounded-full' onClick={() => setVisibleLeft(false)}><RxCross2 size={20} /></span>

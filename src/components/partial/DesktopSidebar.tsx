@@ -16,7 +16,7 @@ const DesktopSidebar = () => {
   const [value, setValue] = useState<number>(10);
 
   return (
-    <div className='px-7 py-8 bg-slate-100 dark:bg-dark-500 fixed left-0 top-0 bottom-0 w-[300px] 2xl:w-[350px] hidden xl:block'>
+    <div className='px-7 py-8 bg-white dark:bg-dark-400 fixed left-0 top-0 bottom-0 w-[300px] 2xl:w-[350px] hidden xl:block shadow-md'>
       <div>
         <Image className='w-[180px] mx-auto' src={MainLogo} width={300} height={100} alt='Smart Wallet' />
         <div className='pt-8 border-b border-slate-200 dark:border-dark-100'></div>
@@ -24,43 +24,43 @@ const DesktopSidebar = () => {
 
       <div className='h-screen overflow-y-scroll overflow-style-none pb-[139px] pt-4'>
         <div className='grid gap-2'>
-          <Link href='#' className='flex items-center gap-3 bg-white dark:bg-dark-100 font-semibold text-gray-600 dark:text-white primary-shadow dark:shadow-sm py-3 px-4 rounded-2xl'>
+          <Link href='#' className='flex items-center gap-3 bg-gray-100 dark:bg-dark-100 font-semibold text-gray-600 dark:text-white py-3 px-4 rounded-2xl'>
             <span className='bg-primary-300 p-2 rounded-xl text-white'><LuLayoutDashboard size={18} /></span>
             <p>Dashboard</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><IoWalletOutline size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><IoWalletOutline size={18} /></span>
             <p>Balance</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><TbMoneybag size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><TbMoneybag size={18} /></span>
             <p>Deposit</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><FiUpload size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><FiUpload size={18} /></span>
             <p>Expense</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><GrTransaction size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><GrTransaction size={18} /></span>
             <p>Transactions</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><TbCalendarDollar size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><TbCalendarDollar size={18} /></span>
             <p>Bills</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><TbBrandGoogleAnalytics size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><TbBrandGoogleAnalytics size={18} /></span>
             <p>Analytics</p>
           </Link>
 
           <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
-            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-primary-300 primary-shadow dark:shadow-none'><GoGoal size={18} /></span>
+            <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><GoGoal size={18} /></span>
             <p>Golas</p>
           </Link>
         </div>

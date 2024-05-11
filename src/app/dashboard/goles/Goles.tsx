@@ -11,6 +11,7 @@ import {
     GaugeReferenceArc,
     useGaugeState,
 } from '@mui/x-charts/Gauge';
+import { Button } from 'primereact/button';
 
 function GaugePointer() {
     const { valueAngle, outerRadius, cx, cy } = useGaugeState();
@@ -41,7 +42,7 @@ const Goles = () => {
 
     return (
         <>
-            <div className='bg-white dark:bg-dark-100 primary-shadow dark:shadow-sm p-5 rounded-xl'>
+            <div className='bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm p-5 rounded-xl'>
                 <div className='flex items-center gap-2'>
                     <span className='text-primary-300'><GoGoal size={26} /></span>
                     <h4 className='text-gray-800 dark:text-white font-medium text-xl'>Goals</h4>
@@ -50,7 +51,7 @@ const Goles = () => {
                 <div className='grid grid-cols-2 sm:grid-cols-2 sm:flex items-center justify-between mt-4'>
                     <div className='flex items-center gap-2'>
                         <h3 className='text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white word-break'>$21000</h3>
-                        <div onClick={() => setVisible(true)} className='text-gray-800 dark:text-white bg-gray-200 dark:bg-gray-700 inline-block p-[6px] rounded-md cursor-pointer text-base lg:text-xl'><FiEdit3 /></div>
+                        <div onClick={() => setVisible(true)} className='text-gray-800 dark:text-white bg-gray-200 dark:bg-dark-50 inline-block p-[6px] rounded-md cursor-pointer text-base lg:text-xl'><FiEdit3 /></div>
                     </div>
                     <h4 className='text-base lg:text-lg font-medium text-gray-800 dark:text-white text-end'>May, 2024</h4>
                 </div>
@@ -101,6 +102,9 @@ const Goles = () => {
                 <div className='mt-5'>
                     <label className='block font-medium text-gray-600 dark:text-white mb-2 text-base' htmlFor='target'>Present Amounts</label>
                     <InputNumber className='sw-input w-full' inputId="target" value={nowValue} onValueChange={(e) => setNowValue(e.value ?? 0)} />
+                </div>
+                <div className='text-center mt-5'>
+                    <Button className='sw-button' label="Submit" />
                 </div>
             </Dialog>
         </>

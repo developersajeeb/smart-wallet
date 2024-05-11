@@ -18,7 +18,7 @@ interface Props {
 export default function RootLayout({ children }: Props) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} className="bg-gray-50 dark:bg-dark-200">
+      <body suppressHydrationWarning={true} className="bg-gray-50 dark:bg-dark-600">
         <Providers>
           <main>
             {children}

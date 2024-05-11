@@ -34,7 +34,7 @@
 }
 
 .sw-dialog-box .p-dialog-header {
-    @apply dark:!bg-dark-100 !text-gray-800 dark:!text-white;
+    @apply dark:!bg-dark-400 !text-gray-800 dark:!text-white;
     border-top-right-radius: 16px !important;
     border-top-left-radius: 16px !important;
 }
@@ -53,10 +53,15 @@
 }
 
 .sw-dialog-box .p-dialog-content {
-    @apply dark:!bg-dark-100;
+    @apply dark:!bg-dark-400;
 }
 
 /* Prime React Input */
 .sw-input input {
-    @apply bg-white dark:!bg-dark-50 dark:border-gray-600 dark:text-gray-300 !rounded-[10px];
+    @apply bg-white dark:!bg-dark-600 dark:border-dark-50 dark:text-gray-300 !rounded-[10px];
+}
+
+/* Prime React button */
+.sw-button {
+    @apply !bg-primary-300 hover:!bg-primary-400 !duration-300 !border-none !px-9 !py-[10px] !rounded-[10px] !font-normal; 
 }
