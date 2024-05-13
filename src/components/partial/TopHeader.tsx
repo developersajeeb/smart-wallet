@@ -47,15 +47,15 @@ const TopHeader = () => {
                                 <Image
                                     onClick={(e) => profileToggle.current && profileToggle.current.toggle(e)}
                                     className='w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover object-center border p-[2px] border-secondary-200 cursor-pointer' src={userPhoto} width={100} height={100} alt='User Photo' />
-                                <OverlayPanel ref={profileToggle} >
+                                <OverlayPanel ref={profileToggle} className='!bg-white dark:!bg-dark-400'>
                                     <ul>
-                                        <li className='block lg:hidden mb-4'>
+                                        <li className='block lg:hidden mb-4 dark:text-white'>
                                             <span title='Notification' className='cursor-pointer'><RiNotification4Line size={20} /></span>
                                         </li>
-                                        <li>
+                                        <li className='dark:text-white'>
                                             <span title='Profile Settings' className='cursor-pointer'><FiSettings size={20} /></span>
                                         </li>
-                                        <li className='mt-4'>
+                                        <li className='mt-4 dark:text-white'>
                                             <span title='Log out' className='cursor-pointer'><RxExit size={20} /></span>
                                         </li>
                                     </ul>
