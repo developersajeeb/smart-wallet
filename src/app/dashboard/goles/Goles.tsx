@@ -97,11 +97,11 @@ const Goles = () => {
             <Dialog header="Edit Goals Amounts" className='sw-dialog-box' visible={visible} onHide={() => setVisible(false)}>
                 <div>
                     <label className='block font-medium text-gray-600 dark:text-white mb-2 text-base' htmlFor='target'>Target Amounts</label>
-                    <InputNumber className='sw-input w-full' inputId="target" value={targetValue} onValueChange={(e) => setTargetValue(e.value ?? 0)} />
+                    <InputNumber className='w-full' inputId="target" value={targetValue} onValueChange={(e) => setTargetValue(e.value ?? 0)} />
                 </div>
                 <div className='mt-5'>
                     <label className='block font-medium text-gray-600 dark:text-white mb-2 text-base' htmlFor='target'>Present Amounts</label>
-                    <InputNumber className='sw-input w-full' inputId="target" value={nowValue} onValueChange={(e) => setNowValue(e.value ?? 0)} />
+                    <InputNumber className='w-full' inputId="target" value={nowValue} onValueChange={(e) => setNowValue(e.value ?? 0)} />
                 </div>
                 <div className='text-center mt-5'>
                     <Button className='sw-button' label="Submit" />

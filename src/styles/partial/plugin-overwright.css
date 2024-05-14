@@ -18,6 +18,8 @@
 /* Prime React Input style */
 .p-inputtext {
     padding: 7px 18px !important;
+    font-family: "Roboto", sans-serif !important;
+    @apply bg-white dark:!bg-dark-600 dark:border-dark-50 dark:text-gray-300 !rounded-[10px];
 }
 
 .p-inputtext:enabled:hover {
@@ -27,6 +29,30 @@
 .p-inputtext:enabled:focus {
     box-shadow: none !important;
     border-color: #108F43 !important;
+}
+
+/* Prime React Drop Down */
+.p-dropdown {
+    border-radius: 10px !important;
+    @apply !bg-white dark:!bg-dark-600 dark:!border-dark-50 dark:!text-gray-300;
+}
+
+.p-dropdown:not(.p-disabled):hover {
+    border-color: #108F43 !important;
+}
+
+.p-dropdown:not(.p-disabled).p-focus {
+    border-color: #108F43 !important;
+    box-shadow: none !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
+    background-color: #f2fff2 !important;
+    color: #108F43 !important;
+}
+
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    padding: 10px 15px !important;
 }
 
 /* Prime React Sidebar */
@@ -57,4 +83,8 @@
 
 .target-pie-custom-class .css-p1sr87-MuiGauge-referenceArc {
     @apply !fill-gray-300 dark:!fill-gray-300;
+}
+
+.total-chart-card .css-ewjtro-MuiBarElement-root{
+    fill: #6E22FA !important;
 }

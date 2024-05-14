@@ -16,7 +16,7 @@ const Dashboard = () => {
 
       <section className='xl:pl-[300px] 2xl:pl-[350px]'>
         <TopHeader />
-        <div className='grid lg:grid-cols-3 px-7 gap-6'>
+        <div className='grid lg:grid-cols-3 px-4 md:px-7 gap-6'>
           <TotalBalance />
           <Goles />
           <UpcomingBills />
