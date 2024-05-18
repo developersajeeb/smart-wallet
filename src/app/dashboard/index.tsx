@@ -23,12 +23,12 @@ const Dashboard = () => {
           <Goles />
           <UpcomingBills />
           <div className="lg:col-span-3">
-            <div className='grid lg:grid-cols-4 gap-6'>
-              <div className='lg:col-span-2'>
+            <div className='grid lg:grid-cols-5 gap-6'>
+              <div className='lg:col-span-2 bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm p-5 rounded-xl'>
                 <RecentTransactions />
               </div>
 
-              <div className='lg:col-span-2'>
+              <div className='lg:col-span-3 bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm rounded-xl pt-5 pl-5'>
                 <MonthlyAnalytics />
               </div>
             </div>

@@ -4,7 +4,7 @@ import { GrTransaction } from 'react-icons/gr';
 
 const RecentTransactions = () => {
     return (
-        <div className='bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm p-5 rounded-xl'>
+        <>
             <div className='flex items-center gap-2'>
                 <span className='text-primary-300'><GrTransaction size={24} /></span>
                 <h4 className='text-gray-800 dark:text-white font-medium text-xl'>Recent Transactions</h4>
@@ -58,9 +58,9 @@ const RecentTransactions = () => {
             </ul>
 
             <div className='mt-3 text-end'>
-                <Link href='/analytics' className='text-primary-300 font-medium cursor-pointer'>View All</Link>
+                <Link href='/analytics' className='text-primary-300 font-medium cursor-pointer text-sm'>View All</Link>
             </div>
-        </div>
+        </>
     );
 };
 

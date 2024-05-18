@@ -88,3 +88,17 @@
 .total-chart-card .css-ewjtro-MuiBarElement-root{
     fill: #6E22FA !important;
 }
+
+/* Prime React Calendar */
+.p-datepicker table td {
+    padding: 4px !important;
+}
+
+.p-datepicker table td > span {
+    width: 2rem !important;
+    height: 2rem !important;
+}
+
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year:enabled:hover, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month:enabled:hover {
+    color: #ffffff !important;
+}

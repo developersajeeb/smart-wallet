@@ -11,7 +11,7 @@ const UpcomingBills = () => {
                     <span className='text-primary-300'><TbCalendarDollar size={26} /></span>
                     <h4 className='text-gray-800 dark:text-white font-medium text-xl'>Upcoming Bill</h4>
                 </div>
-                <Link href='/bills' className='text-sm text-gray-800 dark:text-white flex items-center cursor-pointer hover:text-primary-300 hover:dark:text-primary-300 duration-300'>
+                <Link href='/bills' className='text-sm font-medium flex items-center cursor-pointer text-primary-300 duration-300'>
                     <span>More</span>
                     <span><IoIosArrowForward /></span>
                 </Link>

@@ -16,7 +16,7 @@ const MonthlyAnalytics = () => {
     ];
 
     return (
-        <div className='bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm rounded-xl pt-5 pl-5'>
+        <>
             <LineChart
                 height={300}
                 series={[
@@ -25,7 +25,7 @@ const MonthlyAnalytics = () => {
                 ]}
                 xAxis={[{ scaleType: 'point', data: xLabels }]}
             />
-        </div>
+        </>
     );
 };
 
