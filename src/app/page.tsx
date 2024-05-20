@@ -1,13 +1,24 @@
 'use client';
 import React from 'react';
-import DesktopSidebar from '../components/partial/DesktopSidebar';
-import Dashboard from './dashboard';
+import MainAppLayout from '../components/partial/MainAppLayout';
+import DesktopSidebar from '@/components/partial/DesktopSidebar';
+import TopHeader from '@/components/partial/TopHeader';
 
-const page = () => {
+interface Props {
+  children: React.ReactNode;
+}
+
+const page = ({ children }: Props) => {
 
   return (
     <>
-      <Dashboard />
+      <aside>
+        <DesktopSidebar />
+      </aside>
+      <section className='xl:pl-[300px] 2xl:pl-[350px]'>
+        <TopHeader />
+        {children}
+      </section>
     </>
   );
 };

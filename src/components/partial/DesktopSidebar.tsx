@@ -24,12 +24,12 @@ const DesktopSidebar = () => {
 
       <div className='h-screen overflow-y-scroll overflow-style-none pb-[139px] pt-4'>
         <div className='grid gap-2'>
-          <Link href='#' className='flex items-center gap-3 bg-gray-100 dark:bg-dark-100 font-semibold text-gray-600 dark:text-white py-3 px-4 rounded-2xl'>
+          <Link href='/dashboard' className='flex items-center gap-3 bg-gray-100 dark:bg-dark-100 font-semibold text-gray-600 dark:text-white py-3 px-4 rounded-2xl'>
             <span className='bg-primary-300 p-2 rounded-xl text-white'><LuLayoutDashboard size={18} /></span>
             <p>Dashboard</p>
           </Link>
 
-          <Link href='#' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
+          <Link href='/balance' className='flex items-center gap-3 py-3 px-4 rounded-2xl'>
             <span className='bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none'><IoWalletOutline size={18} /></span>
             <p>Balance</p>
           </Link>
