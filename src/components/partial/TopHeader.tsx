@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef, useState } from 'react';
 import { InputText } from "primereact/inputtext";
 import { FiSearch } from "react-icons/fi";

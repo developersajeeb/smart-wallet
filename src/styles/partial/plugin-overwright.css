@@ -15,6 +15,20 @@
     font-weight: 600 !important;
 }
 
+/* Prime React Dialog */
+.p-dialog-content {
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: #e0e0e0;
+        border-radius: 999px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #898989;
+        border-radius: 999px;
+    }
+}
+
 /* Prime React Input style */
 .p-inputtext {
     padding: 7px 18px !important;
@@ -101,4 +115,72 @@
 
 .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-year:enabled:hover, .p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month:enabled:hover {
     color: #ffffff !important;
+}
+
+/* Prime React Multiselect Dropdown */
+.p-multiselect {
+    @apply bg-white dark:!bg-dark-600 dark:border-dark-50 dark:text-gray-300 !rounded-[10px];
+}
+
+.p-multiselect:not(.p-disabled).p-focus {
+    border-color: #108F43 !important;
+    box-shadow: none !important;
+}
+
+.p-multiselect:not(.p-disabled):hover{
+    border-color: #108F43 !important;
+}
+
+.p-multiselect .p-multiselect-label {
+    padding: 7px 18px !important;
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item:focus {
+    box-shadow: none !important;
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: #108F43 !important;
+    @apply !bg-gray-100 dark:!bg-dark-100;
+}
+
+.p-multiselect-item {
+    color: #ffffff !important;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+    border-color: #108F43 !important;
+    background: #108F43 !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    border-color: #108F43 !important;
+    background: #108F43 !important;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+    border-color: #108F43 !important;
+}
+
+.p-multiselect .p-multiselect-label.p-placeholder {
+    color: #9ca3af !important;
+}
+
+.p-multiselect-header {
+    @apply dark:!bg-[#2c2c2c];
+}
+.p-multiselect-items-wrapper {
+    @apply dark:!bg-[#2c2c2c];
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
+    @apply dark:!bg-dark-100;
+}
+
+.p-checkbox .p-checkbox-box {
+    @apply dark:bg-dark-400 dark:border-dark-50;
+}
+
+.p-multiselect.p-multiselect-chip .p-multiselect-token {
+    @apply dark:!bg-dark-400 dark:text-white;
 }

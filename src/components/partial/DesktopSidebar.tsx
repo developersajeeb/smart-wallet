@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import React, { useState } from 'react';
 import MainLogo from '/public/Smart-wallet.png';
