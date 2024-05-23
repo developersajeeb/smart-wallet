@@ -2,8 +2,8 @@ import React from 'react';
 
 const Balance = () => {
     return (
-        <div>
-            dffdf
+        <div className='px-4 pb-4 md:px-7 md:pb-7'>
+fgfgf
         </div>
     );
 };

@@ -6,6 +6,39 @@
     scrollbar-width: none;
 }
 
+/* Route Active class */
+.active {
+    @apply flex items-center gap-3 bg-gray-100 dark:bg-dark-100 text-gray-600 dark:text-white py-3 px-4 rounded-2xl duration-300;
+}
+
+.active .inner-active {
+    @apply bg-primary-300 p-2 rounded-xl text-white duration-300;
+}
+
+.not-active {
+    @apply flex items-center gap-3 py-3 px-4 rounded-2xl duration-300;
+}
+
+.not-active .inner-not-active {
+    @apply bg-white dark:bg-dark-100 p-2 rounded-xl text-gray-600 dark:text-white primary-shadow dark:shadow-none duration-300;
+}
+
+.mobile-active {
+    @apply flex items-center gap-3 bg-gray-100 dark:bg-dark-100 text-gray-600 dark:text-white p-2 rounded-full duration-300;
+}
+
+.mobile-active .mobile-inner-active {
+    @apply bg-primary-300 p-2 rounded-full text-white duration-300;
+}
+
+.mobile-not-active {
+    @apply flex items-center gap-3 p-2 rounded-full text-gray-800 dark:text-white duration-300;
+}
+
+.mobile-not-active .mobile-inner-not-active {
+    @apply bg-white dark:bg-dark-100 p-2 rounded-full text-primary-300 primary-shadow dark:shadow-none duration-300;
+}
+
 /* Common Word break class */
 .word-break {
     word-break: break-word;
