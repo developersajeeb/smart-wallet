@@ -68,7 +68,7 @@ const DesktopSidebar = () => {
           </Link>
         </div>
 
-        <div className='p-4 bg-primary-200 rounded-2xl mt-10 bg-cover bg-no-repeat bg-right' style={{backgroundImage: `url(/bg-images/bg.png)`,}}>
+        <div className='p-4 bg-primary-200 rounded-2xl mt-10 bg-cover bg-no-repeat bg-right' style={{backgroundImage: `url(images/bg-images/bg.png)`,}}>
           <h4 className='text-lg font-semibold text-white text-center'>Your profile completion</h4>
           <Knob className='sw-knob mt-5 mb-2 flex justify-center' readOnly value={value} step={10} onChange={(e) => setValue(e.value)} />
           <p className='text-sm font-medium text-white text-center'>Please complete your profile with information</p>

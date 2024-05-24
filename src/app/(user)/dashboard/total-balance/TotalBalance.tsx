@@ -10,6 +10,7 @@ import { Calendar } from 'primereact/calendar';
 import { Nullable } from "primereact/ts-helpers";
 import Link from 'next/link';
 import { MultiSelect, MultiSelectChangeEvent } from 'primereact/multiselect';
+import { IoIosArrowForward } from 'react-icons/io';
 
 interface Account {
     name: string;
@@ -57,8 +58,11 @@ const TotalBalance = () => {
                         <p className='mt-3 text-xs font-light text-gray-400'>All account balance</p>
                         <h3 className='text-2xl mt-[2px] lg:text-3xl font-semibold text-gray-800 dark:text-white word-break'>$30000</h3>
                     </div>
-                    <div className='text-end'>
-                        <Link href='/balance' className='text-primary-300 font-medium cursor-pointer leading-none text-sm'>View All</Link>
+                    <div>
+                        <Link href='/balance' className='text-sm font-medium flex items-center justify-end text-primary-300 cursor-pointer'>
+                            <span>View All</span>
+                            <span><IoIosArrowForward /></span>
+                        </Link>
                     </div>
                 </div>
 

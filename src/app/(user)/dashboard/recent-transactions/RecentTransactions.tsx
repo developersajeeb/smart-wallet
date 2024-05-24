@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { GrTransaction } from 'react-icons/gr';
+import { IoIosArrowForward } from 'react-icons/io';
 
 const RecentTransactions = () => {
     return (
@@ -57,8 +58,11 @@ const RecentTransactions = () => {
                 </li>
             </ul>
 
-            <div className='mt-3 text-end'>
-                <Link href='/analytics' className='text-primary-300 font-medium cursor-pointer text-sm'>View All</Link>
+            <div className='mt-3'>
+                <Link href='/analytics' className='text-sm font-medium flex items-center justify-end text-primary-300 cursor-pointer'>
+                    <span>View All</span>
+                    <span><IoIosArrowForward /></span>
+                </Link>
             </div>
         </>
     );
