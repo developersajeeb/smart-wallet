@@ -93,3 +93,30 @@
 .sw-button {
     @apply !bg-primary-300 hover:!bg-primary-400 !duration-300 !border-none !px-9 !py-[10px] !rounded-[10px] !font-normal; 
 }
+
+/* Card Design */
+.virtual-card:before {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 110px;
+    background-color: #000000;
+    right: 0;
+    top: 36px;
+    border-bottom-left-radius: 120px;
+    border-top-right-radius: 24px;
+    opacity: 8%;
+}
+
+.virtual-card:after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    background-color: #000000;
+    left: 0;
+    bottom: 0px;
+    border-top-right-radius: 120px;
+    border-bottom-left-radius: 24px;
+    opacity: 8%;
+}
