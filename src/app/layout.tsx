@@ -5,6 +5,7 @@ import 'primereact/resources/themes/soho-light/theme.css';
 import 'primeicons/primeicons.css';
 import Providers from "./Providers";
 import '../styles/app.css'
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Smart Wallet",
@@ -20,6 +21,10 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <body suppressHydrationWarning={true} className="bg-gray-50 dark:bg-dark-600">
         <Providers>
+          <Toaster
+            position="top-center"
+            reverseOrder={true}
+          />
           <main>
             {children}
           </main>
