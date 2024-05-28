@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { InputText } from "primereact/inputtext";
 import { FiSearch } from "react-icons/fi";
 import { RiNotification4Line } from "react-icons/ri";
@@ -11,11 +11,25 @@ import { CgMenuLeft } from "react-icons/cg";
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { FiSettings } from "react-icons/fi";
 import { RxExit } from "react-icons/rx";
+import { usePathname } from 'next/navigation';
 
 const TopHeader = () => {
     const [value, setValue] = useState<string>('');
     const [visibleLeft, setVisibleLeft] = useState<boolean>(false);
     const profileToggle = useRef<OverlayPanel | null>(null);
+    const pathname = usePathname();
+    const [pageName, setPageName] = useState<string>('')
+    
+    useEffect(() => {
+        if (pathname) {
+          const pathSegments = pathname.replace(/^\//, '').split('/');
+          const capitalizedPath = pathSegments
+            .map(segment => segment.charAt(0).toUpperCase() + segment.slice(1))
+            .join(' ');
+    
+          setPageName(capitalizedPath);
+        }
+      }, [pathname]);
 
     return (
         <>
@@ -24,7 +38,7 @@ const TopHeader = () => {
                     <div className='xl:hidden'>
                         <CgMenuLeft className='cursor-pointer' onClick={() => setVisibleLeft(true)} size={25} />
                     </div>
-                    <h1 className='text-xl sm:text-2xl font-semibold text-gray-700 dark:text-white'>Dashboard</h1>
+                    <h1 className='text-xl sm:text-2xl font-semibold text-gray-700 dark:text-white'>{pageName}</h1>
                 </section>
 
                 <section className='flex items-center gap-6'>
@@ -34,15 +48,19 @@ const TopHeader = () => {
                     </div>
 
                     <div>
-                        <ul className='flex items-center gap-2 sm:gap-4'>
+                        <ul className='flex items-center gap-3 sm:gap-4'>
                             <li className='hidden lg:block'>
                                 <button className='bg-primary-300 hover:bg-primary-400 duration-300 px-4 py-[10px] rounded-xl font-medium text-white text-sm'>+ Add Expense</button>
                             </li>
-                            <li className='hidden lg:block'>
-                                <button className='bg-primary-300 hover:bg-primary-400 duration-300 h-10 w-10 flex justify-center items-center rounded-full text-white'><RiNotification4Line size={20} /></button>
+                            <li>
+                                <button className='flex justify-center items-center text-gray-800 dark:text-white'>
+                                    <RiNotification4Line size={24} />
+                                </button>
                             </li>
                             <li>
-                                <button className='bg-primary-300 hover:bg-primary-400 duration-300 w-8 h-8 sm:w-10 sm:h-10 flex justify-center items-center rounded-full text-white'><ThemeSwitch /></button>
+                                <button className='flex justify-center items-center text-gray-800 dark:text-white'>
+                                    <ThemeSwitch />
+                                </button>
                             </li>
                             <li>
                                 <Image
@@ -50,9 +68,6 @@ const TopHeader = () => {
                                     className='w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover object-center border p-[2px] border-secondary-200 cursor-pointer' src={userPhoto} width={100} height={100} alt='User Photo' />
                                 <OverlayPanel ref={profileToggle} className='!bg-white dark:!bg-dark-400'>
                                     <ul>
-                                        <li className='block lg:hidden mb-4 dark:text-white'>
-                                            <span title='Notification' className='cursor-pointer'><RiNotification4Line size={20} /></span>
-                                        </li>
                                         <li className='dark:text-white'>
                                             <span title='Profile Settings' className='cursor-pointer'><FiSettings size={20} /></span>
                                         </li>

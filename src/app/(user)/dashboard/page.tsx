@@ -12,8 +12,10 @@ const Dashboard = () => {
 
   return (
     <div className='grid lg:grid-cols-3 px-4 pb-4 md:px-7 md:pb-7 gap-6'>
-      <TotalBalance />
-      <Goles />
+      <div className='col-span-1 lg:col-span-2 grid gap-6 md:grid-cols-2'>
+        <TotalBalance />
+        <Goles />
+      </div>
       <UpcomingBills />
       <div className="lg:col-span-3">
         <div className='grid lg:grid-cols-5 gap-6'>

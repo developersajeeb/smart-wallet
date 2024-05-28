@@ -1,5 +1,6 @@
 .p-component {
-    font-family: "Roboto", sans-serif !important;
+    /* font-family: "Roboto", sans-serif !important; */
+    font-family: "Plus Jakarta Sans", sans-serif !important;
 }
 
 .sw-knob svg .p-knob-range {
@@ -32,7 +33,9 @@
 /* Prime React Input style */
 .p-inputtext {
     padding: 7px 18px !important;
-    font-family: "Roboto", sans-serif !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    /* font-family: "Roboto", sans-serif !important; */
+    
     @apply bg-white dark:!bg-dark-600 dark:border-dark-50 dark:text-gray-300 !rounded-[10px];
 }
 

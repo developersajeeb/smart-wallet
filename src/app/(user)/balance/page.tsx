@@ -16,10 +16,7 @@ const Balance = () => {
     return (
         <section className='px-4 pb-4 md:px-7 md:pb-7 grid md:grid-cols-3 gap-5'>
             <div className='relative'>
-                <div className='flex items-center justify-between mb-2 px-2'>
-                    <h4 className='text-gray-800 dark:text-white font-medium text-lg'>BRAC Bank</h4>
-                    <span className='text-red-600 cursor-pointer'><FiTrash2 size={22} /></span>
-                </div>
+                <h4 className='text-gray-800 dark:text-white font-medium text-lg mb-2 px-2'>BRAC Bank</h4>
 
                 <div className='bg-gradient-to-r  from-secondary-300 to-blue-500 p-6 rounded-3xl min-h-56 grid virtual-card'>
                     <div className='flex justify-between'>
@@ -55,10 +52,7 @@ const Balance = () => {
                 </div>
             </div>
             <div className='relative'>
-                <div className='flex items-center justify-between mb-2 px-2'>
-                    <h4 className='text-gray-800 dark:text-white font-medium text-lg'>DBBL Bank</h4>
-                    <span className='text-red-600 cursor-pointer'><FiTrash2 size={22} /></span>
-                </div>
+                <h4 className='text-gray-800 dark:text-white font-medium text-lg mb-2 px-2'>DBBL Bank</h4>
 
                 <div className='bg-gradient-to-r  from-primary-300 to-lime-500 p-6 rounded-3xl min-h-56 grid virtual-card'>
                     <div className='flex justify-between'>
@@ -95,10 +89,7 @@ const Balance = () => {
             </div>
 
             <div className='relative'>
-                <div className='flex items-center justify-between mb-2 px-2'>
-                    <h4 className='text-gray-800 dark:text-white font-medium text-lg'>American Express</h4>
-                    <span className='text-red-600 cursor-pointer'><FiTrash2 size={22} /></span>
-                </div>
+                <h4 className='text-gray-800 dark:text-white font-medium text-lg mb-2 px-2'>American Express</h4>
 
                 <div className='bg-gradient-to-r  from-[#5B628B] to-[#203B59] p-6 rounded-3xl min-h-56 grid virtual-card'>
                     <div className='flex justify-between'>
@@ -133,12 +124,9 @@ const Balance = () => {
                     </Link>
                 </div>
             </div>
-            
+
             <div className='relative'>
-                <div className='flex items-center justify-between mb-2 px-2'>
-                    <h4 className='text-gray-800 dark:text-white font-medium text-lg'>American Express</h4>
-                    <span onClick={notify} className='text-red-600 cursor-pointer'><FiTrash2 size={22} /></span>
-                </div>
+                <h4 className='text-gray-800 dark:text-white font-medium text-lg mb-2 px-2'>American Express</h4>
 
                 <div className='bg-gradient-to-r  from-[#5B628B] to-[#203B59] p-6 rounded-3xl min-h-56 grid virtual-card'>
                     <div className='flex justify-between'>
