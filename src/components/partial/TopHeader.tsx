@@ -18,18 +18,19 @@ const TopHeader = () => {
     const [visibleLeft, setVisibleLeft] = useState<boolean>(false);
     const profileToggle = useRef<OverlayPanel | null>(null);
     const pathname = usePathname();
-    const [pageName, setPageName] = useState<string>('')
-    
-    useEffect(() => {
-        if (pathname) {
-          const pathSegments = pathname.replace(/^\//, '').split('/');
-          const capitalizedPath = pathSegments
-            .map(segment => segment.charAt(0).toUpperCase() + segment.slice(1))
-            .join(' ');
-    
-          setPageName(capitalizedPath);
-        }
-      }, [pathname]);
+
+    const pageMapping: { [key: string]: string } = {
+        '/dashboard': 'Dashboard',
+        '/balance': 'Balance',
+        '/deposit': 'Deposit',
+        '/expense': 'Expense',
+        '/transactions': 'Transactions',
+        '/bills': 'Bills',
+        '/analytics': 'Analytics',
+        '/golas': 'Golas',
+      };
+      
+      const pageName: string = pageMapping[pathname] || 'Loading...';
 
     return (
         <>
