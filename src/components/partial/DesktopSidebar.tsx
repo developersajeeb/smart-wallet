@@ -11,7 +11,6 @@ import { GoGoal } from "react-icons/go";
 import { TbMoneybag } from "react-icons/tb";
 import { FiUpload } from "react-icons/fi";
 import { TbCalendarDollar } from "react-icons/tb";
-import { Knob } from 'primereact/knob';
 import { usePathname } from 'next/navigation';
 
 const DesktopSidebar = () => {
@@ -27,7 +26,7 @@ const DesktopSidebar = () => {
 
       <div className='h-screen overflow-y-scroll overflow-style-none pb-[139px] pt-4'>
         <div className='grid gap-2'>
-          <Link href='/dashboard' className={` ${pathname === '/dashboard' ? 'active' : 'not-active' }`}>
+          <Link href='/dashboard' className={`${pathname === '/dashboard' ? 'active' : 'not-active' }`}>
             <span className='inner-active inner-not-active'><LuLayoutDashboard size={18} /></span>
             <p>Dashboard</p>
           </Link>

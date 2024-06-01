@@ -26,7 +26,7 @@ const UpcomingBills = () => {
                         </div>
 
                         <div>
-                            <h4 className='text-lg font-bold text-gray-800 dark:text-white'>Figma - Monthly</h4>
+                            <h4 className='text-lg font-semibold text-gray-800 dark:text-white'>Figma - Monthly</h4>
                             <p className='text-sm text-gray-500 dark:text-gray-400'>Last Charge - 14 Jun, 2024</p>
                         </div>
                     </div>
@@ -45,7 +45,7 @@ const UpcomingBills = () => {
                         </div>
 
                         <div>
-                            <h4 className='text-lg font-bold text-gray-800 dark:text-white'>Adobe - Monthly</h4>
+                            <h4 className='text-lg font-semibold text-gray-800 dark:text-white'>Adobe - Monthly</h4>
                             <p className='text-sm text-gray-500 dark:text-gray-400'>Last Charge - 15 Jun, 2024</p>
                         </div>
                     </div>

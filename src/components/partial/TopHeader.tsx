@@ -12,6 +12,7 @@ import { OverlayPanel } from 'primereact/overlaypanel';
 import { FiSettings } from "react-icons/fi";
 import { RxExit } from "react-icons/rx";
 import { usePathname } from 'next/navigation';
+import MainLogo from '/public/Smart-wallet.png';
 
 const TopHeader = () => {
     const [value, setValue] = useState<string>('');
@@ -22,6 +23,7 @@ const TopHeader = () => {
     const pageMapping: { [key: string]: string } = {
         '/dashboard': 'Dashboard',
         '/balance': 'Balance',
+        '/balance/id': 'Account Details',
         '/deposit': 'Deposit',
         '/expense': 'Expense',
         '/transactions': 'Transactions',
@@ -30,7 +32,7 @@ const TopHeader = () => {
         '/golas': 'Golas',
       };
       
-      const pageName: string = pageMapping[pathname] || 'Loading...';
+      const pageName: string = pageMapping[pathname] || ' ';
 
     return (
         <>
@@ -39,7 +41,8 @@ const TopHeader = () => {
                     <div className='xl:hidden'>
                         <CgMenuLeft className='cursor-pointer' onClick={() => setVisibleLeft(true)} size={25} />
                     </div>
-                    <h1 className='text-xl sm:text-2xl font-semibold text-gray-700 dark:text-white'>{pageName}</h1>
+                    <h1 className='text-xl sm:text-2xl font-semibold text-gray-700 dark:text-white hidden sm:block truncate'>{pageName}</h1>
+                    <Image className='w-[120px] block sm:hidden' src={MainLogo} width={300} height={100} alt='Smart Wallet' />
                 </section>
 
                 <section className='flex items-center gap-6'>
@@ -66,7 +69,7 @@ const TopHeader = () => {
                             <li>
                                 <Image
                                     onClick={(e) => profileToggle.current && profileToggle.current.toggle(e)}
-                                    className='w-8 h-8 sm:w-10 sm:h-10 rounded-full object-cover object-center border p-[2px] border-secondary-200 cursor-pointer' src={userPhoto} width={100} height={100} alt='User Photo' />
+                                    className='max-w-8 max-h-8 sm:max-w-10 sm:max-h-10 rounded-full object-cover object-center border p-[2px] border-secondary-200 cursor-pointer' src={userPhoto} width={100} height={100} alt='User Photo' />
                                 <OverlayPanel ref={profileToggle} className='!bg-white dark:!bg-dark-400'>
                                     <ul>
                                         <li className='dark:text-white'>
