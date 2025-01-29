@@ -23,7 +23,7 @@ const Dashboard = () => {
             <RecentTransactions />
           </div>
 
-          <div className='lg:col-span-3 bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm rounded-xl pt-5 pl-5'>
+          <div className='lg:col-span-3 bg-white dark:bg-dark-400 primary-shadow dark:shadow-sm rounded-xl pt-5 px-5'>
             <MonthlyAnalytics />
           </div>
         </div>
